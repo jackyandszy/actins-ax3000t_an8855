@@ -143,7 +143,7 @@ jobs:
       id: tag
       if: steps.compile.outputs.status == 'success' && !cancelled()
       run: |
-        echo "release_tag=237 ImmortalWrt_$(date +"%Y.%m.%d-%H%M")" >> $GITHUB_OUTPUT
+        echo "release_tag=237_ImmortalWrt_$(date +"%Y.%m.%d-%H%M")" >> $GITHUB_OUTPUT
         touch release.txt
         echo "237 ImmortalWrt 🌝 xiaomi ax3000t" >> release.txt
         echo "status=success" >> $GITHUB_OUTPUT
